@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   get "/sign_in" => "sessions#new", as: "sign_in"
   delete "/sign_out" => "sessions#destroy", as: "sign_out"
 
+  get "/recipes/gimmick" => "recipes#gimmick", as: "gimmick"
   get "/recipes/index" => "recipes#index", as: "recipes_index"
   get "/recipes/new" => "recipes#new", as: "create_recipe"
   post "/recipes/new" => "recipes#create" 

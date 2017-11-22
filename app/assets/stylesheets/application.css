@@ -21,6 +21,13 @@ body{
 	text-shadow: rgb(255, 255, 255);
 }
 
+.searchbar{
+	margin-top: 15px;
+	margin-left: 45%;
+	margin-right: 50%;
+	
+}
+
 .shadow-box{
 	margin: 0 auto;
     width: 75em;
@@ -35,8 +42,12 @@ body{
 	float: right;
 	margin-right: 20px;
 	text-shadow: rgb(255, 255, 255);
+	color: rgb(206,66,80);
 }
 
+.recipe-link{
+	color: rgb(217, 217, 217);
+}
 
 .index-1{
 	border-style: dashed;
@@ -44,7 +55,8 @@ body{
 	width: 33%;
 	display: inline-block;
 	margin: 0.03%;
-	margin-bottom: 5px;
+	margin-bottom: 15px;
+	margin-top: 15px;
 	text-align: center;
 }
 

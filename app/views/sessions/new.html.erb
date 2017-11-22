@@ -1,5 +1,5 @@
 <h1>Sign In Page</h1>
-<%= form_for :session do |form| %>
+<%= form_for :session, html: {id: :bla } do |form| %>
 	<%= render partial: '/sessions/form', object: form %>
 <%end%>
 

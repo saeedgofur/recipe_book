@@ -48,5 +48,8 @@ class RecipesController < ApplicationController
 	    params.require(:recipe).permit(:title, :description)
 	end
 
+	def gimmick
+
+	end
 
 end

@@ -4,4 +4,7 @@
 
 <h1><%= JSON.parse(request.body)["recipe"]["title"] %></h1>
 
-<h3>Full Recipe at: <%= JSON.parse(request.body)["recipe"]["source_url"] %></h3>
+
+
+
+<a class="recipe-link" target="_blank" href="<%= JSON.parse(request.body)["recipe"]["source_url"] %>"><h3>See Full Recipe </h3></a>
