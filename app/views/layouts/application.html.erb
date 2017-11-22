@@ -9,6 +9,30 @@
   </head>
 
   <body>
+  <div class="shadow-box">
+  	<ul>
+	  	<%if signed_in? %>
+	      <li><%= button_to("Sign Out", sign_out_path, method: :delete) %></li>
+	      <div class="log-in-status"><li>Logged-In As: <%=current_user.name%></li></div>
+	    <% else %>
+
+	     
+	        <li><%= button_to("Sign In", sign_in_path, method: :get) %></li>
+
+	     	
+
+	        <li><%= button_to("Sign Up", sign_up_path, method: :get) %></li>
+	        <div class="log-in-status"><li>You are not currently logged in</li></div>
+
+	    <% end %>
+
+	    <li><%= button_to("All Recipes", recipes_index_path, method: :get) %></li>
+
+	    <li><%= button_to("New Recipe", create_recipe_path, method: :get) %></li>
+	</ul>
+
+
     <%= yield %>
+  </div>  
   </body>
 </html>

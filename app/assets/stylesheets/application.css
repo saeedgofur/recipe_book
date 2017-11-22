@@ -13,3 +13,62 @@
  *= require_tree .
  *= require_self
  */
+body{
+	background: url('background2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: rgb(217, 217, 217);
+	text-shadow: rgb(255, 255, 255);
+}
+
+.shadow-box{
+	margin: 0 auto;
+    width: 75em;
+    height: 40em;
+    overflow: auto; 
+    background-color: rgba(77, 77, 77, 0.5);
+    z-index: 1000;
+    border-radius: 5px;
+}
+
+.log-in-status{
+	float: right;
+	margin-right: 20px;
+	text-shadow: rgb(255, 255, 255);
+}
+
+
+.index-1{
+	border-style: dashed;
+	border-width: 0.25px;
+	width: 33%;
+	display: inline-block;
+	margin: 0.03%;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+/*################################*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(104, 104, 104, 0.7);
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+	color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}

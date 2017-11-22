@@ -1,0 +1,6 @@
+<h1>Sign In Page</h1>
+<%= form_for :session do |form| %>
+	<%= render partial: '/sessions/form', object: form %>
+<%end%>
+
+<%= button_to "Sign in with Facebook", "/auth/facebook", method: :get %>

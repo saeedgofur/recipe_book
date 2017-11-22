@@ -1,0 +1,13 @@
+<h3>Please enter your recipe</h3>
+
+<div class="text-field">
+  <%= form.text_field :title, type: 'title', placeholder: "Title of Recipe" %>
+</div>
+
+<div class="text-field">
+  <%= form.text_area :description, cols: 40, rows: 15, type: 'description', placeholder: "Enter your recipe" %>
+</div>
+
+<div class="submit-field">
+  <%= form.submit %>
+</div>

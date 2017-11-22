@@ -1,0 +1,16 @@
+<%= form_tag search_recipes_path do %>
+
+<input name="query" placeholder="Search For Recipes" type="text" autocomplete="off">
+
+<%end%>
+
+<h1>All of your recipes</h1>
+
+<% @recipes.each do |x| %>
+	<div class="index-1">
+		<h2><%= x.title %></h2>
+		<div id='recipe-<%= x.id %>'>
+		</div>
+		<%= button_to 'See Instructions', recipe_show_path(x.id), remote: true, method: :get %>
+	</div>
+<% end %>

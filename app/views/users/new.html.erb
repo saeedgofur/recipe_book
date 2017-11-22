@@ -1,0 +1,10 @@
+<h1>Sign Up Page</h1>
+<%= form_for User.new do |form| %>
+
+	<%= render partial: '/users/form', object: form %>
+	<%= form.submit %>
+	
+<%end%>
+
+
+	
