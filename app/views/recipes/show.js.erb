@@ -1,3 +1,1 @@
-// alert('<%= @recipe.description %>')
-
-$('#recipe-<%= @recipe.id %>').html('<%= @recipe.description %>')
+$('#recipe-<%= @recipe.id %>').html('<%= escape_javascript(@recipe.description).gsub("\\n","<br>").html_safe %>')

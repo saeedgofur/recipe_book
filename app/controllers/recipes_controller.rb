@@ -1,7 +1,6 @@
 class RecipesController < ApplicationController
 	
 	def index
-
 		if signed_in?
 			@recipes = current_user.recipes
 		else
@@ -11,9 +10,14 @@ class RecipesController < ApplicationController
 
 
 	def search
-		@z = "params[:query]"
+		@z = "%#{params[:query]}%"
 		@recipes = Recipe.where("title LIKE ? or description LIKE ?", @z, @z)
 		render "index"
+	end
+
+
+	def random
+
 	end
 
 

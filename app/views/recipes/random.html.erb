@@ -1,0 +1,7 @@
+<% request = RestClient.get("http://food2fork.com/api/get?key=#{ENV['F2F_API_KEY']}&rId=#{rand(1000..9999)}") %>
+
+
+
+<h1><%= JSON.parse(request.body)["recipe"]["title"] %></h1>
+
+<h3>Full Recipe at: <%= JSON.parse(request.body)["recipe"]["source_url"] %></h3>

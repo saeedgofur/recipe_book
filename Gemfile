@@ -61,5 +61,6 @@ gem "figaro"
 gem "omniauth"
 gem "omniauth-facebook"
 
+gem 'rest-client'
 
 
