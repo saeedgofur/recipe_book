@@ -10,11 +10,13 @@ RSpec.feature "SignIns", type: :feature do
   	it 'signs me in and redirects to recipes index page' do
   		visit '/sign_in'
   		within ("#bla") do
-  			find('email').set('kevin@example.com')
-  			find('password').set('password')
+  			find('#session_email').set('kevin@example.com')
+  			find('#session_password').set('password')
       		
   		end
-  		click_button 'Sign In'
+  		within('.submit-field') do
+		  click_button 'Sign In'
+		end
   		expect(page).to have_content "All of your recipes"
   	end
 
