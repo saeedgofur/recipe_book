@@ -11,7 +11,7 @@ class RecipesController < ApplicationController
 
 	def search
 		@z = "%#{params[:query]}%"
-		@recipes = Recipe.where("title LIKE ? or description LIKE ?", @z, @z)
+		@recipes = Recipe.where("title ILIKE ? or description ILIKE ?", @z, @z)
 		render "index"
 	end
 

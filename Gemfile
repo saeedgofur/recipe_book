@@ -67,3 +67,6 @@ gem "omniauth-facebook"
 gem 'rest-client'
 
 gem 'will_paginate', '~> 3.1.0'
+
+
+gem 'rails_12factor', group: :production
